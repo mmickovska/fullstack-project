@@ -1,0 +1,75 @@
+.main-wrapper {
+    margin: 10px 120px;
+}
+
+.main-fresh-and-new-title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.main-fresh-and-new-title h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-roboto-slab);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--green);
+    text-align: left;
+    font: normal normal bold 36px/48px Roboto Slab;
+    letter-spacing: 0px;
+    color: #96BB36;
+    opacity: 1;
+}
+
+.main-fresh-and-new-title h1:after {
+    content: "";
+    width: 1055px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 345px;
+}
+
+.main-fresh-and-new-content {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 78px;
+    grid-row-gap: 64px;
+    margin-bottom: 50px;
+}
+
+.main-most-popular-recipes-title {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.main-most-popular-recipes-title h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-roboto-slab);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--green);
+    text-align: left;
+    font: normal normal bold 36px/48px Roboto Slab;
+    letter-spacing: 0px;
+    color: #96BB36;
+    opacity: 1;
+}
+
+.main-most-popular-recipes-title h1:after {
+    content: "";
+    width: 900px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 107%;
+    left: 500px;
+}
+
+.main-most-popular-recipes-content {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 78px;
+    grid-row-gap: 64px;
+    margin-bottom: 120px;
+}

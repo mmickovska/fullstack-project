@@ -1,0 +1,75 @@
+.all-categories-wrapper {
+    margin: 10px 120px;
+}
+
+.all-categories-title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.all-categories-title h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-roboto-slab);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--green);
+    text-align: left;
+    font: normal normal bold 36px/48px Roboto Slab;
+    letter-spacing: 0px;
+    color: #96BB36;
+    opacity: 1;
+}
+
+.breakfast-title h1:after {
+    content: "";
+    width: 1100px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 300px;
+}
+
+.brunch-title h1:after {
+    content: "";
+    width: 1135px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 265px;
+}
+
+.lunch-title h1:after {
+    content: "";
+    width: 1150px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 250px;
+}
+
+.dinner-title h1:after {
+    content: "";
+    width: 1150px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 250px;
+}
+
+.all-categories-content {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 78px;
+    grid-row-gap: 64px;
+    margin-bottom: 180px;
+}

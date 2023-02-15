@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+html, body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    width: 100%;
+    font: normal normal bold 15px/20px Roboto;
+    background-color: #626262;
+}
+
+.footer-wrapper {
+    margin: 0px 120px;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-link-footer {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.recipe-link-footer:hover {
+    transition: 0.2s;
+    transform: scale(1.15);
+}
+
+.bullet-footer {
+    color: white;
+    font-weight: bolder;
+    margin: 0px 16px;
+    opacity: 1;
+    font-size: xx-large;
+}
+
+.copyright-wrapper {
+    color: white;
+    font-weight: 100;
+}
+
+.copyright-wrapper p {
+    margin: 0px;
+}

@@ -1,0 +1,135 @@
+.my-recipes-wrapper {
+    margin: 50px 84px 50px 120px;
+}
+
+.my-recipes-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.my-recipes-title h1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-roboto-slab);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--green);
+    text-align: left;
+    font: normal normal bold 36px/48px Roboto Slab;
+    letter-spacing: 0px;
+    color: #96BB36;
+    opacity: 1;
+    margin: 0;
+}
+
+.my-recipes-title h1:after {
+    content: "";
+    width: 1065px;
+    height: 0.2px;
+    display: block;
+    background: #c2c2c2;
+    position: absolute;
+    right: 0;
+    top: 27%;
+    left: 330px;
+}
+
+.plus-btn {
+    background-color: #F0972A;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.plus-btn:hover {
+    background-color: #ad5f00;
+    transition: 0.2s;
+}
+
+.my-recipes-content {
+    margin-bottom: 120px;
+}
+
+.recipe-labels {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recipe-name-label {
+    margin-right: 50px;
+}
+
+.category-label {
+    margin-right: 50px;
+}
+
+.delete-label {
+    margin-left: 450px;
+}
+
+.recipe-links-rectangle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    width: 100%;
+    height: 61px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.recipe-item {
+    display: inline-block;
+}
+
+.recipe-name {
+    margin-left: 60px;
+    width: 19.3%;
+}
+
+.category {
+    margin-right: 40px;
+    background-color: #96BB36;
+    color: white;
+    width: 5%;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 12px/16px var(--unnamed-font-family-roboto);
+    font: normal normal bold 12px/16px Roboto;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.created-on {
+    margin-left: 120px;
+    width: 50%;
+}
+
+.trashcan-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+    margin-right: 4em;
+    cursor: default;
+}
+
+.card-link {
+    position: relative;
+    text-decoration: none;
+    color: #A5A5A5;
+}   
+
+.item-list {
+    position: relative;
+    width: 1310px;
+}

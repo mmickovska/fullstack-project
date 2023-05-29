@@ -1,2 +1,2 @@
-# fullstack-project using Javascript/React
+# fullstack-project using Javascript/React/Node
 User-Recipes website

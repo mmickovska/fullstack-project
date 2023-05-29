@@ -3,7 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import * as strings from "../pages/templates.json";
+import * as strings from '../pages/templates.json';
 import '../style/Login.css';
 
 export const Login = () => {
@@ -14,20 +14,23 @@ export const Login = () => {
     const [password, setPassword] = useState('');
 
     const handleSubmit = () => {
-        axios.post('http://127.0.0.1:10002/api/v1/auth/login', {
-            email : email,
-            password : password
-        })
-        .then(res => {
+        axios
+          .post('http://127.0.0.1:10002/api/v1/auth/login', {
+            email: email,
+            password: password,
+          })
+          .then((res) => {
             localStorage.setItem('jwt', res.data.token);
             alert(`User log in OK! Token: ${res.data.token}`);
             console.log(`User log in OK! Token: ${res.data.token}`);
             navigate('/my-profile');
-        })
-        .catch(err => {
-            console.error(err, 'User credentials not OK!');
-        })
-    };
+          })
+          .catch((err) => {
+            console.error(err);
+            alert('User credentials not OK!');
+          });
+      };
+      
 
     return (
         <>

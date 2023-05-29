@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap');
 
-html, body {
+html,
+body {
     width: 100%;
     margin: 0 auto;
     font-family: 'Roboto Slab', serif;
+    min-height: 100%;
 }
 
 footer {
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
     width: 100%;
     font: normal normal bold 15px/20px Roboto;
     background-color: #626262;

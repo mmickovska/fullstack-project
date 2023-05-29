@@ -11,21 +11,32 @@ export const MyProfile = () => {
     const [birthday, setBirthday] = useState('');
     const [password, setPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
-    
+    const [avatar, setAvatar] = useState('');
+
     const shouldDisableSubmit = (!password || !repeatPassword) || (password !== repeatPassword);
 
     const refreshPage = () => {
         window.location.reload();
     };
 
+    const handleAvatarChange = (event) => {
+        setAvatar(event.target.files[0]);
+    };
+
     const handleSubmit = () => {
-        axios.put('http://127.0.0.1:10002/api/v1/auth/update-user', {
-            first_name : firstName,
-            last_name : lastName, 
-            email : email,
-            birthday : birthday,
-            password : password,
-            password2 : repeatPassword
+        const formData = new FormData();
+        formData.append('avatar', avatar);
+        formData.append('first_name', firstName);
+        formData.append('last_name', lastName);
+        formData.append('email', email);
+        formData.append('birthday', birthday);
+        formData.append('password', password);
+        formData.append('password2', repeatPassword);
+        
+        axios.put('http://127.0.0.1:10002/api/v1/auth/update-user', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
         })
         .then(() => {
             alert("User info successfully updated!");
@@ -48,6 +59,8 @@ export const MyProfile = () => {
                 <div className='my-profile-content'>
                     <div className='my-profile-left-content'>
                         <img src="https://st.depositphotos.com/1052233/2885/v/600/depositphotos_28850541-stock-illustration-male-default-profile-picture.jpg" alt="avatar-pic"/>
+                        <br />
+                        <input type='file' accept='image/*' onChange={handleAvatarChange} />
                         <br />
                         <button className='avatar-pic-btn'>CHANGE AVATAR</button>
                     </div>
@@ -73,6 +86,7 @@ export const MyProfile = () => {
                             <input type="text" placeholder='Smith' onChange={e => setLastName(e.target.value)} value={lastName} required/>
                             <br />
                             <label htmlFor="">Birthday</label>
+
                             <br />
                             <input 
                                 type="date" 

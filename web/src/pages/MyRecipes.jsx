@@ -64,12 +64,7 @@ export const MyRecipes = () => {
                                 num={index}
                             />
                         </React.Fragment>
-                    ))
-                    // .reverse((a, b) => 
-                    //     (a.published_on > b.published_on) ? 1 : 
-                    //     (b.published_on > a.published_on) ? -1 : 0
-                    // )
-                    }
+                    ))}
                 </div>
             </div>
         </div>

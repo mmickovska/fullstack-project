@@ -53,21 +53,21 @@
 
 .recipe-labels {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 40px;
 }
 
 .recipe-name-label {
     margin-right: 50px;
 }
 
-.category-label {
+/* .category-label {
     margin-right: 50px;
-}
-
+} */
+ 
 .delete-label {
-    margin-left: 450px;
+    margin-left: 350px;
 }
 
 .recipe-links-rectangle {
@@ -124,12 +124,14 @@
 }
 
 .card-link {
+    width: 100%;
     position: relative;
     text-decoration: none;
     color: #A5A5A5;
+    justify-content: space-between;
 }   
 
 .item-list {
     position: relative;
-    width: 1310px;
+    width: 100%;
 }

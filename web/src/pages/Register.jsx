@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import * as strings from "../pages/templates.json";
+import * as strings from '../pages/templates.json';
 import '../style/Register.css';
 
 export const Register = () => {

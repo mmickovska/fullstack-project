@@ -12,7 +12,8 @@ const Recipe = mongoose.model(
         stars: Number,
         published_on: String,
         created_by: String,
-        author_id: String
+        author_id: String,
+        recipe_image: String
     },
     'recipes'
 );

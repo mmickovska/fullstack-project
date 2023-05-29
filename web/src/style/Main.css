@@ -73,3 +73,47 @@
     grid-row-gap: 64px;
     margin-bottom: 120px;
 }
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.card-facilities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-list, .card-link, .recipe-links-rectangle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-recipees-body {
+    display: flex;
+    width: 100%;
+}
+@media only screen and (max-width: 900px) {
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-fresh-and-new-content,
+    .main-most-popular-recipes-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

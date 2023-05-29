@@ -219,3 +219,17 @@ textarea::placeholder {
 .recipe-category-selector {
     color: #626262;
 }
+
+.upload-img-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.create-recipe-left-content {
+    DISPLAY: flex;
+    flex-direction: column;
+    padding: 10px;
+}
